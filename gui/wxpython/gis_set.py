@@ -37,12 +37,10 @@ import wx.adv
 import wx.html
 import wx.lib.mixins.listctrl as listmix
 
-from grass.grassdb.checks import get_lockfile_if_present
-
 from core.gcmd import GError, RunCommand
 from core.utils import GetListOfLocations, GetListOfMapsets
 from startup.utils import (
-    get_possible_database_path,
+    get_lockfile_if_present, get_possible_database_path,
     create_database_directory)
 from startup.guiutils import (SetSessionMapset,
                               create_mapset_interactively,
